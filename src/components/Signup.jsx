@@ -4,6 +4,8 @@ import { Navigate, useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import signupImage from "../assets/signup.png";
+import frameImage from "../assets/frame.png";
 
 const Signup = () => {
   const navigate = useNavigate();
@@ -228,12 +230,12 @@ const Signup = () => {
 
       <div className="mt-14 h-64 w-64 relative">
         <img
-          src="src/assets/signup.png"
+          src={signupImage}
           loading="lazy"
           className="h-[95%] w-[95%] absolute z-10 top-0 left-0"
         />
         <img
-          src="src/assets/frame.png"
+          src={frameImage}
           loading="lazy"
           className="h-[95%] w-[95%] absolute z-0 bottom-0 right-0"
         />

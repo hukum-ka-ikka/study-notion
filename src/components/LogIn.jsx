@@ -4,6 +4,8 @@ import { FcGoogle } from "react-icons/fc";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import loginImage from "../assets/login.png";
+import frameImage from "../assets/frame.png";
 
 const LogIn = ({ user, toggleUser }) => {
   const navigate = useNavigate();
@@ -94,12 +96,12 @@ const LogIn = ({ user, toggleUser }) => {
 
       <div className="mt-14 h-64 w-64 relative">
         <img
-          src="src/assets/login.png"
+          src={loginImage}
           loading="lazy"
           className="h-[95%] w-[95%] absolute z-10 top-0 left-0"
         />
         <img
-          src="src/assets/frame.png"
+          src={frameImage}
           loading="lazy"
           className="h-[95%] w-[95%] absolute z-0 bottom-0 right-0"
         />
